@@ -14,5 +14,4 @@ class App extends Model
         return $this->belongsToMany('App\User', 'users_have_apps')->withTimestamps();
     }
 
-
 }
