@@ -19,7 +19,7 @@ class CreateUsersRestrictAppsTable extends Migration
             $table->unsignedInteger('app_id');
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('app_id')->references('id')->on('apps')->onDelete('cascade');
-            $table->integer('maximun_usage_time');
+            $table->integer('maximum_usage_time');
             $table->integer('usage_from_hour');
             $table->integer('usage_to_hour');
             $table->timestamps();
